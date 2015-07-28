@@ -1,0 +1,137 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <title>AKQA - Tech Test</title>
+    </head>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans|Droid+Serif:400,700' rel='stylesheet' type='text/css'>
+    <link href="css/styles.css" rel="stylesheet">
+    <body>  
+
+        <main>
+            <div class="container">
+
+                <div class="basket">
+                    
+                    <div class="basket__heading">
+                        <h1>Your Basket</h1>
+                        <p>Items you have added to your basket are shown below.</p>
+                        <p>Adjust the quantities or remove items before continuing your purchase.</p>
+                    </div>
+
+                    <div class="basket__content">
+                        
+                        <form type="POST" class="js-form">
+
+                            <table class="basket__table">
+                                <thead class="basket__heading">
+                                    <tr>
+                                        <th class="wide">Product</th>
+                                        <th>Price</th>
+                                        <th>Qty</th>
+                                        <th>Cost</th>
+                                        <th class="last"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="wide">Cotton T-Shirt, Medium</td>
+                                        <td>&pound;<span class="js-unit-cost">1.99</span></td>
+                                        <td>
+                                            <input type="text" class="basket__unit-cost js-unit-quantity" value="1" name="items[item[quantity]]" />
+                                            <input type="hidden" class="basket__unit_id js-unit-id" value="1" name="items[item[id]]" />
+                                            <div class="basket__unit-controls js-unit-controls">
+                                                <a href="#" data-dir="up">+</a>
+                                                <a href="#" data-dir="down">-</a>
+                                            </div>
+                                        </td>
+                                        <td>&pound;<span class="js-unit-total">1.99</span></td>
+                                        <td class="last">
+                                            <a href="/remove_item/1" class="basket__remove js-remove">
+                                                <img alt="" src="images/icon_bin.png" />
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="wide">Baseball Cap, One Size</td>
+                                        <td>&pound;<span class="js-unit-cost">2.99</span></td>
+                                        <td>
+                                            <input type="text" class="basket__unit-cost js-unit-quantity" value="2" name="items[item[quantity]]" />
+                                            <input type="hidden" class="basket__unit_id js-unit-id" value="2" name="items[item[id]]" />
+                                            <div class="basket__unit-controls js-unit-controls">
+                                                <a href="#" data-dir="up">+</a>
+                                                <a href="#" data-dir="down">-</a>
+                                            </div>
+                                        </td>
+                                        <td>&pound;<span class="js-unit-total">5.98</span></td>
+                                        <td class="last">
+                                            <a href="/remove_item/2" class="basket__remove js-remove">
+                                                <img alt="" src="images/icon_bin.png" />
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="wide">Swim Shorts, Medium</td>
+                                        <td>&pound;<span class="js-unit-cost">3.99</span></td>
+                                        <td>
+                                            <input type="text" class="basket__unit-cost js-unit-quantity" value="1" name="items[item[quantity]]" />
+                                            <input type="hidden" class="basket__unit_id js-unit-id" value="3" name="items[item[id]]" />
+                                            <div class="basket__unit-controls js-unit-controls">
+                                                <a href="#" data-dir="up">+</a>
+                                                <a href="#" data-dir="down">-</a>
+                                            </div>
+                                        </td>
+                                        <td>&pound;<span class="js-unit-total">3.99</span></td>
+                                        <td class="last">
+                                            <a href="/remove_item/3" class="basket__remove js-remove">
+                                                <img alt="" src="images/icon_bin.png" />
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+
+                            <div class="basket__meta">
+                                <div class="basket__row">
+                                    Subtotal
+                                    <span class="basket__price">
+                                        &pound;<span class="js-subtotal">11.96</span>
+                                    </span>
+                                </div>
+                                <div class="basket__row">
+                                    VAT @ 20%
+                                    <span class="basket__price">
+                                        &pound;<span class="js-vat">2.39</span>
+                                    </span>
+                                </div>
+                                <div class="basket__row--total">
+                                    Total Cost
+                                    <span class="basket__price">
+                                        &pound;<span class="js-total">14.35</span>
+                                    </span>
+                                </div>
+
+                                <input type="submit" class="basket__submit js-submit" value="Buy Now &#187;" />
+
+                            </div>
+
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </main>
+
+        <footer>
+            
+        </footer>
+
+        <script type="text/javascript" src="js/libs/jquery.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+
+    </body>
+</html>
